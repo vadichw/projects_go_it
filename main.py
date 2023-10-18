@@ -4,4 +4,4 @@ night = 14
 pay = (day * rate) + (night * (rate/2))
 print(pay)
 
-# It is 'comunalka'
+# Add comuna
