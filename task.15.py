@@ -1,0 +1,5 @@
+name = input("Your name? ")
+email = input("Email")
+age = int(input("Age"))
+height = float(input("Height"))
+is_active = bool("Would you like to get message")
