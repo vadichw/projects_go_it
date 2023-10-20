@@ -11,3 +11,14 @@ lon2 = math.radians(-0.1275)
 distance = math.acos((math.sin(lat1) * math.sin(lat2) + math.cos(lat1) * math.cos(lat2) * math.cos(lon1 - lon2))) * RADIUS
 
 print(distance)
+
+###
+some_data = None
+msg = some_data or "Nothing entered"
+print(msg)
+
+###
+nice = False
+state = "nice" if nice else "not nice"
+print(state)
+
