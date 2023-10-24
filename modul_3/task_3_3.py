@@ -4,4 +4,7 @@ price_per_km = 10
 total_trip = 0
 
 def calculate_trip_price(distance_km):
-    total_trip
+    price = int(base_rate + (price_per_km * distance_km))
+    return price
+
+print(calculate_trip_price(1))
