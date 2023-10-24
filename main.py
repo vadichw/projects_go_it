@@ -12,6 +12,8 @@ distance = math.acos((math.sin(lat1) * math.sin(lat2) + math.cos(lat1) * math.co
 
 print(distance)
 
+# TERNALNI OPERATIONS
+
 ###
 some_data = None
 msg = some_data or "Nothing entered"
