@@ -20,18 +20,18 @@ fun()
 print("x як і раніше", x)
 
 # GLOBAL
-у = 10
-def f():
-    global y
-    print("y =", y)
-    y = 5
-    print("Змінили глобальне значення у на", y)
-f()
-print("Значення у дорівнює", y)
+#у = 10
+#def f():
+    #global y
+    #print("y =", y)
+    #y = 5
+    #print("Змінили глобальне значення у на", y)
+#f()
+#print("Значення у дорівнює", y)
 
 # LAMBDA
 
-print((lambda x, y: x + y)(6, 8))
+#print((lambda x, y: x + y)(6, 8))
 
 # REKURCIA
 
@@ -63,3 +63,16 @@ from math import pi, sin
 sin_pi = sin(pi)
 print(sin_pi)
 
+# RANDOM
+import random
+for item in range(5):
+    print(random.randint(1, 10))
+
+
+import string
+str = "hello, my lord"
+print(str)
+print(string.capwords(str))
+
+
+# ТОЧКА ВХОДА
