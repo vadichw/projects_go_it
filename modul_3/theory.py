@@ -32,3 +32,34 @@ print("Значення у дорівнює", y)
 # LAMBDA
 
 print((lambda x, y: x + y)(6, 8))
+
+# REKURCIA
+
+def factorial(n):
+    if n <= 1:
+        return 1
+    else:
+        return n * factorial(n - 1) # Типа 5 * (5 - 1) = 5 * 4
+print(factorial(5))
+
+## FIBONACHI
+
+#def fibonachi(n):
+    #if n in (1, 2):
+        #return 1
+    #return fibonachi( n - 1) + fibonachi(n - 2)
+    
+#print(fibonachi(10))
+
+def fibonachi_1(n):
+    a, b = 0, 1
+    for i in range(n):
+        a, b = b, a + b
+    return a
+print(fibonachi_1(10))
+
+# IMPORT 
+from math import pi, sin
+sin_pi = sin(pi)
+print(sin_pi)
+
