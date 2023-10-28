@@ -74,5 +74,3 @@ str = "hello, my lord"
 print(str)
 print(string.capwords(str))
 
-
-# ТОЧКА ВХОДА
