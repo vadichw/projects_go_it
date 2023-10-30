@@ -3,6 +3,7 @@ def format_ingredients(items):
         return ''
     if len(items) == 1:
         return items[0]
+            #results
     # result = ', '.join(map(str, items[:-1]))
     result = f"{', '.join(items[:-1])} and {items[-1]}"
     # result += f' and {str(items[-1])}'
