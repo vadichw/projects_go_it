@@ -42,3 +42,25 @@ print(chars)
 chars = {'a': 1, 'b': 2}
 chars.update({"c": 3})
 print(chars)
+
+# get(key[, default]) — не викликає виключення, якщо ключа немає в словнику, повертає default, за замовчуванням default=None
+chars = {'a': 1, 'b': 2}
+c_idx = chars.get('c', -1)
+print(c_idx)
+
+# keys(), value()
+
+num = {
+    1: "one",
+    2: "two",
+    3: "three",
+}
+
+for n in num.keys():
+    print(n)
+
+for nv in num.values():
+    print(nv)
+
+for key, value in num.items():
+    print(key, value)
