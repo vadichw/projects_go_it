@@ -5,5 +5,5 @@ def lookup_key(data, value):
         if val == value:
             keys.append(key)
     return keys
-print(lookup_key('', 2))
+print(lookup_key(None, 3))
 
