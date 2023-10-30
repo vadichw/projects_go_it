@@ -10,4 +10,4 @@ def format_ingredients(items):
     return result
 print(format_ingredients(["2 eggs", "1 liter sugar", "1 tsp salt", "vinegar"]))
 
-print(format_ingredients([]))
+print(format_ingredients(["2 eggs"]))
