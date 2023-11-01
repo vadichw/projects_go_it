@@ -1,12 +1,14 @@
+from pathlib import Path
+import sys
+
+
 # C:\folder.... 
+
 # Из-за таких слешей на Винде, когда запустить код на Линуксе, то ничего работать не будет. Чтоб решить это есть Pathlib
 
 # Делаем свой скрипт типа команды ls
 
-# Клас Path принимает пустую строку как текущую директорию
-from pathlib import Path
-import sys
-
+# Клас Path принимает пустую строку как текущую 
 def main():
     if len(sys.argv) < 2:
         user_input = ""
