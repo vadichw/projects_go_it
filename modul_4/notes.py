@@ -65,6 +65,12 @@ for nv in num.values():
 for key, value in num.items():
     print(key, value)
 
+# n.key, n.values, n.items
+a = {"key": 1, "key2" : 2}
+print(a.keys())
+print(a.values())
+print(a.items())
+
 #-----------SET----------------------#
 
 #Множини — це неврегульований контейнер, який містить тільки унікальні елементи. У множину можна додавати тільки незмінні типи даних.
@@ -120,4 +126,5 @@ print(s.startswith("Bi"))
 
 s = "hello.jpg"
 print(s.endswith("jpg"))
+
 
