@@ -127,3 +127,15 @@ print(s.startswith("Bi"))
 s = "hello.jpg"
 print(s.endswith("jpg"))
 
+
+#------------Os PathLib------------------------------#
+
+import os
+#path = os.path.join("user", "folder", "slak") # Create path
+#print(path)
+
+fol = os.makedirs("user/bin/media") # Create folder 
+print(fol)
+
+import glob
+print(glob.glob("m*")) # Найдет файлы, которые начинаються на m

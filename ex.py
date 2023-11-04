@@ -1,8 +1,6 @@
-text = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
-print(text)
+from random import randint
+randon_num = randint(40,126)
 
-list = text.split()
-print(list)
 
-text_1 = " ".join(list)
-print(text_1)
+
+#def get_random_password():
