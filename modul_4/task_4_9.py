@@ -1,25 +1,17 @@
-def is_valid_pin_codes(pin_codes):
+def is_valid_pin(pin_codes):
     if not pin_codes:
         return False
 
-    list = set(pin_codes)
+    unique_pin = set(pin_codes)
 
-# Перевірка на дублікати та валідність пін-кодів
-    if len(list) != len(pin_codes):
+    if len(unique_pin) != len(pin_codes):
         return False
-    for pin_codes in list:
-        if len(pin_codes) != 4 or not pin_codes.isdigit():
+    
+    for pin_code in unique_pin:
+        if len(pin_code) != 4 or not pin_code.isdigit(): # isdigit - проверяет есть ли в строке числа
             return False
-
     return True
-    
-
-    
 
 
-
-
-
-
-
-print(is_valid_pin_codes(["1111", "2123"]))
+pin = is_valid_pin(["1111","222"])
+print(pin)
