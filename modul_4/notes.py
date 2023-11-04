@@ -120,4 +120,3 @@ print(s.startswith("Bi"))
 
 s = "hello.jpg"
 print(s.endswith("jpg"))
-
