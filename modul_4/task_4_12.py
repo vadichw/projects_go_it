@@ -38,3 +38,4 @@ def get_password():
         if is_valid_password(password):
                 return password
         attemps += 1
+print(get_password())
