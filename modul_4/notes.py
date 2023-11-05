@@ -139,3 +139,5 @@ print(fol)
 
 import glob
 print(glob.glob("m*")) # Найдет файлы, которые начинаються на m
+
+
