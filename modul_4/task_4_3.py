@@ -1,6 +1,6 @@
 def format_ingredients(items):
     if not items:
-        return ''
+        return f"Nothing"
     if len(items) == 1:
         return items[0]
     # result = ', '.join(map(str, items[:-1]))
@@ -11,3 +11,5 @@ def format_ingredients(items):
 print(format_ingredients(["2 eggs", "1 liter sugar", "1 tsp salt", "vinegar"]))
 
 print(format_ingredients(["2 eggs"]))
+
+print(format_ingredients([]))

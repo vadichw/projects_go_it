@@ -134,10 +134,19 @@ import os
 #path = os.path.join("user", "folder", "slak") # Create path
 #print(path)
 
-fol = os.makedirs("user/bin/media") # Create folder 
-print(fol)
+#fol = os.makedirs("user/bin/media") # Create folder 
+#print(fol)
 
-import glob
-print(glob.glob("m*")) # Найдет файлы, которые начинаються на m
+#import glob
+#print(glob.glob("m*")) # Найдет файлы, которые начинаються на m
 
 
+from pathlib import*
+current_dir = Path.cwd()
+print(current_dir)
+
+home_dir = Path.home()
+print(home_dir)
+
+f = Path.cwd() / 'user' / 'folder'
+print(f)
