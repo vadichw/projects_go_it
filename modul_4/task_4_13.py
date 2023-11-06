@@ -8,7 +8,7 @@ def parse_folder(path):
             files.append(elements.name)
         elif elements.is_dir():
             folders.append(elements.name)
-    #return files, folders
+    return files, folders
     
 
 # У Path є ряд корисних методів та атрибутів:
