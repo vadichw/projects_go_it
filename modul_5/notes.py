@@ -94,3 +94,14 @@ age = re.search('\d+', s)
 age_1 = re.search('\d+', s)
 print(age_1.group())
 print(age)
+
+# findall()
+# Коли потрібно знайти всі відповідні шаблону значення, можна скористатися функцією findall.
+s = "I bought 7 nuts for 6$ and 10 bolts for 3$."
+num = re.findall('\d+', s)
+print(num)
+
+# sub()
+# Щоб замінити всі підрядки, що відповідають регулярному виразу, можна скористатися функцією sub.
+p = re.sub(r'(blue|white|red)', 'colour', 'blue socks and red shoes')
+print(p)
