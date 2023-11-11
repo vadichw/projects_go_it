@@ -1,4 +1,4 @@
-def is_spam_words(text, spam_words, space_around=False):
+def is_spam_words(text, spam_words, space_around = False):
     text = text.lower()
     text_list = text.split(' ')
     for spam_word in spam_words:
