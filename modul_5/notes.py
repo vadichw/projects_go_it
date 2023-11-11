@@ -70,6 +70,38 @@ name_1 = {ord('В'): 'V',
 name = 'Вадим'.translate(name_1)
 print(name)
 
+# 
+###
+txt = "sun"
+my_table = txt.maketrans("u", "o")
+print(txt.translate(my_table)) # son
+
+txt = "sun"
+my_table = txt.maketrans("nus", "mot")
+print(txt.translate(my_table))  # tom
+
+# Третій параметр у таблиці зіставлення описує символи, які ви хочете видалити з рядка:
+txt = "the sun"
+my_table = txt.maketrans("nus", "nos", "he t")
+print(txt.translate(my_table))  # son
+
+
+# Якщо ми збираємося транслювати кирилицю на латиницю, у нас може виникнути проблема, наприклад, при транслітерації слова "чаша", яке має бути "chasha" і має довжину на два символи більше. Використання maketrans викличе помилку. Як бути?
+
+# Для цього можна використовувати вбудовану функцію zip, яка перетворює численні об'єкти, що ітеруються в єдиний об'єкт кортежів, що ітерується, та складається з відповідних елементів
+
+CYRILLIC = ("а", "ч", "ш")
+LATIN = ("a", "ch", "sh")
+
+TRANSLIT_DICT = {}
+
+for c, l in zip(CYRILLIC, LATIN):
+    TRANSLIT_DICT[ord(c)] = l
+    TRANSLIT_DICT[ord(c.upper())] = l.upper()
+
+print("чаша".translate(TRANSLIT_DICT))  # chasha
+print("ЧАША".translate(TRANSLIT_DICT))  # CHASHA
+
 ##Наприклад, вивести числа від 1 до 15 в десятковому, шістнадцятковому, вісімковому і двійковому представленні:
 for i in range(5):
     s = "int: {0:d};  hex: {0:#x};  oct: {0:#o};  bin: {0:#b}".format(i)
@@ -105,3 +137,5 @@ print(num)
 # Щоб замінити всі підрядки, що відповідають регулярному виразу, можна скористатися функцією sub.
 p = re.sub(r'(blue|white|red)', 'colour', 'blue socks and red shoes')
 print(p)
+
+
