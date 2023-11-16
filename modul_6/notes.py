@@ -64,10 +64,10 @@ fh.close()
 # Python за замовчуванням використовує UTF-8, в якій один символ може займати від 1 до 4 байт, і всього в алфавіті може бути до 1 112 064 знаків
 
 byte_string = b'Hello'
-print(byte_string)
+#print(byte_string)
 
 byte_word = 'Hello'.encode()
-print(byte_word)
+#print(byte_word)
 
 numbers = [0, 128, 255]
 byte_numbers = bytes(numbers)

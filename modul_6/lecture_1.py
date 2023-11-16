@@ -90,12 +90,22 @@ file.close()
 # Можливості Pathlib
 
 from pathlib import Path
-current_path = Path()
-print(current_path.cwd()) # .absolute
+# current_path = Path()
+# print(current_path.cwd()) # .absolute
 
-#file = current_path / 'folder' / 'draw.svg'
-file = current_path.joinpath('draw', 'bin', '1', '2')
-print(file)
-print(file.parts)
-print(type(file.parts))
-print(file.name.split('.')[0])
+# #file = current_path / 'folder' / 'draw.svg'
+# file = current_path.joinpath('draw', 'bin', '1', '2')
+# print(file)
+# print(file.parts)
+# print(type(file.parts))
+# print(file.name.split('.')[0])
+
+# new_dir = Path('new_folder')
+# new_dir.mkdir(exist_ok=True)
+# new_dir.rmdir()
+
+# # Parents folders
+# new_dir = Path('test/new_folder')
+# new_dir.mkdir(exist_ok=True, parents=True)
+# new_dir.rmdir()
+
