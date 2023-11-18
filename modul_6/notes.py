@@ -73,3 +73,8 @@ numbers = [0, 128, 255]
 byte_numbers = bytes(numbers)
 print(byte_numbers)
 
+
+byte_array = bytearray(b'Vadim Chepik')
+byte_array[0] = ord('V')
+byte_array[1] = ord('C')
+print(byte_array)
